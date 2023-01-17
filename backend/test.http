@@ -1,0 +1,33 @@
+POST   http://localhost:4003/user
+Content-Type: application/json
+
+{
+    "email":"akech@gmail.com",
+    "password":"12345"
+}
+
+
+# POST   http://localhost:4003/login
+# Content-Type: application/json
+
+# {
+#     "email":"mercy@gmail.com",
+#     "password":"12345"
+# }
+Priscilla Aketch23:13
+https://github.com/aketc/Kenya-Musicians-Union
+Priscilla Aketch23:16
+Mission: To safeguard our members' rights and promote their social-welfare
+
+Vision: To exercise collective power to create a fairer (music) work environment for our members
+
+Core values:
+
+Teamwork: Through our individual strengths we energize our joint efforts to improve the lives of the members we serve.
+
+Accountability: We hold ourselves personally and collectively responsible to do right and adhere to the Union’s ethical principles in an environment of openness and honesty.
+
+
+
+
+# install rest client extension to use this or else just use postman
