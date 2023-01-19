@@ -1,0 +1,63 @@
+.container{
+    width: 100vw;
+    background: rgb(241, 240, 240);
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 0;
+}
+.w3-bar-item {
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+.nav-right{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.header{
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+}
+.w3-xxxlarge{
+    font-size: xx-large;
+}
+.w3-tag{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+.routes{
+   display: flex; 
+}
+.routes-ul{
+    display: flex;
+}
+.routes-li{
+list-style: none;
+text-decoration: none;
+margin-right: 10px;
+}
+.body{
+    display: flex;
+    width: 100vw;
+}
+.right{
+    max-width: 40vw;  
+    background-color: white;
+  margin-left: 20px;
+}
+.left{
+    margin-left: 30px;
+    background-color: white;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
