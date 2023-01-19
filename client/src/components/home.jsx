@@ -4,6 +4,14 @@ import girl from "./images/download.png"
 import aim from "./images/IMG_0077.JPG"
 import objectives from "./images/IMG_20160607_103105.jpg"
 import logo from "./images/download.jpeg"
+import event1 from "./images/IMG-20170703-WA0043.jpg"
+import event2 from "./images/18 KeMU workshop pics.jpg"
+import event3 from "./images/20180906_110548.jpg"
+import event4 from "./images/6.jpeg"
+import jeans0 from "./images/CONFERENECE BANNER - Copy - Copy.JPG"
+import men from "./images/WP_20150720_14_26_22_Pro.jpg"
+import jeans from "./images/DSC02117 - Copy (2).JPG"
+import jeans1 from "./images/IMG_0007.JPG"
 
 import { NavLink } from "react-router-dom"
 
@@ -12,6 +20,8 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
+  faPinterest,
+  faSnapchat,
 } from "@fortawesome/free-brands-svg-icons"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -45,7 +55,8 @@ function Home() {
             className="w3-bar-item w3-button"
           />
         </div>
-        <div>
+        <div className="nav-right-div">
+          <input type="search" className="nav-input" />
           <FontAwesomeIcon icon={faSearch} className="search nav-right" />
           <NavLink to="/login" className="btn-login nav-right">
             Login
@@ -57,7 +68,7 @@ function Home() {
           <b>KENYA MUSICIANS UNION</b>
         </h1>
         <h6>
-          Welcome to <span className="w3-tag">KeMU</span>
+          Welcome to <span className="w3-tag-head">KeMU</span>
         </h6>
       </div>
       <div className="routes">
@@ -223,43 +234,54 @@ function Home() {
             <ul className="w3-ul w3-hoverable w3-white">
               <li className="w3-padding-16">
                 <img
-                  src="images/IMG-20170703-WA0043.jpg"
+                  src={event1}
                   alt="popular events"
                   className="w3-left w3-margin-right"
                 />
-                <span className="w3-large">Happening Now</span>
-                <br />
-                <span>Upcoming Women's Desk</span>
-              </li>
+                <div className="event-right">
+                  <span className="w3-large">Happening Now</span>
+                  <br />
+                  <span>Upcoming Women's Desk</span>
+                </div>
+              </li>{" "}
+              <hr />
               <li className="w3-padding-16">
                 <img
-                  src="images/18 KeMU workshop pics.jpg"
+                  src={event2}
                   alt="happening noe"
                   className="w3-left w3-margin-right"
                 />
-                <span className="w3-large">Workshop</span>
-                <br />
-                <span>Capacity Building</span>
-              </li>
+                <div className="event-right">
+                  <span className="w3-large">Workshop</span>
+                  <br />
+                  <span>Capacity Building</span>
+                </div>
+              </li>{" "}
+              <hr />
               <li className="w3-padding-16">
                 <img
-                  src="images/20180906_110548.jpg"
+                  src={event3}
                   alt="workshop"
                   className="w3-left w3-margin-right"
                 />
-                <span className="w3-large">Press</span>
-                <br />
-                <span>KeMU and FIM Workshop</span>
+                <div className="event-right">
+                  <span className="w3-large">Press</span>
+                  <br />
+                  <span>KeMU and FIM Workshop</span>
+                </div>
               </li>
+              <hr />
               <li className="w3-padding-16">
                 <img
-                  src="images/6.jpeg"
+                  src={event4}
                   alt="FIM"
                   className="w3-left w3-margin-right w3-sepia"
                 />
-                <span className="w3-large">Trends</span>
-                <br />
-                <span>Swedish Musicians Federation</span>
+                <div className="event-right">
+                  <span className="w3-large">Trends</span>
+                  <br />
+                  <span>Swedish Musicians Federation</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -331,25 +353,19 @@ function Home() {
             <div className="w3-row-padding w3-white">
               <div className="w3-col s6">
                 <p>
-                  <img
-                    src="images/CONFERENECE BANNER - Copy - Copy.JPG"
-                    alt="Jeans"
-                  />
+                  <img src={jeans0} alt="Jeans" />
                 </p>
+
                 <p>
-                  <img src="images/WP_20150720_14_26_22_Pro.jpg" alt="Jeans" />
+                  <img src={jeans} alt="Jeans" />
                 </p>
               </div>
               <div className="w3-col s6">
                 <p>
-                  <img
-                    src="images/DSC02117 - Copy (2).JPG"
-                    alt="Men in Hats"
-                    className="w3-grayscale"
-                  />
+                  <img src={men} alt="Men in Hats" className="w3-grayscale" />
                 </p>
                 <p>
-                  <img src="images/IMG_0007.JPG" alt="Jeans" />
+                  <img src={jeans1} alt="Jeans" />
                 </p>
               </div>
             </div>
@@ -358,17 +374,17 @@ function Home() {
             <div className="w3-container w3-padding w3-black">
               <h4>Follow Us</h4>
             </div>
-            <div className="w3-container w3-xlarge w3-padding">
-              <i className="fa fa-facebook-official w3-hover-opacity"></i>
-              <i className="fa fa-instagram w3-hover-opacity"></i>
-              <i className="fa fa-snapchat w3-hover-opacity"></i>
-              <i className="fa fa-pinterest-p w3-hover-opacity"></i>
-              <i className="fa fa-twitter w3-hover-opacity"></i>
-              <i className="fa fa-linkedin w3-hover-opacity"></i>
+            <div className="w3-container w3-xlarge w3-padding icons">
+              <FontAwesomeIcon className="icon" icon={faFacebook} />{" "}
+              <FontAwesomeIcon className="icon" icon={faInstagram} />{" "}
+              <FontAwesomeIcon className="icon" icon={faSnapchat} />{" "}
+              <FontAwesomeIcon className="icon" icon={faPinterest} />{" "}
+              <FontAwesomeIcon className="icon" icon={faTwitter} />{" "}
+              <FontAwesomeIcon className="icon" icon={faLinkedin} />{" "}
             </div>
           </div>
           <div className="w3-white w3-margin">
-            <div className="w3-container w3-padding w3-black">
+            <div className="w3-container w3-padding w3-black ">
               <h4>Subscribe</h4>
             </div>
             <div className="w3-container w3-white">
@@ -399,12 +415,14 @@ function Home() {
         </p>
         <p> Cell: +254 (0)720 708319/ +254 (0)721 745002/ +254 (0)722 757553</p>
         <p>
-          <strong>Location</strong>2 nd Floor - Uganda House, Kenyatta Avenue –
+          <strong>Location</strong> 2 nd Floor - Uganda House, Kenyatta Avenue –
           Nairobi, Kenya
         </p>
         <p>
-          <strong>E -mail:</strong> kenyamusiciansu@gmail.com
-          <a href="kenyamusiciansu@gmail.com" target="_blank"></a>
+          <strong>E -mail:</strong> kenyamusiciansu@gmail.com <br />
+          <a href="https://kenyamusiciansu@gmail.com" target="_blank">
+            Email us
+          </a>
         </p>
       </footer>
     </div>
