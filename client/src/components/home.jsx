@@ -420,7 +420,11 @@ function Home() {
         </p>
         <p>
           <strong>E -mail:</strong> kenyamusiciansu@gmail.com <br />
-          <a href="https://kenyamusiciansu@gmail.com" target="_blank">
+          <a
+            href="https://kenyamusiciansu@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Email us
           </a>
         </p>

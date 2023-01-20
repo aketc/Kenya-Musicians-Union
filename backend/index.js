@@ -24,6 +24,9 @@ mongoose
   })
 
 app.use(json())
+app.get("/", (req, res) => {
+  res.send("srrver")
+})
 
 app.use("/", require("./routes/user"))
 
