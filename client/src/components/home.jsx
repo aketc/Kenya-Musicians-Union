@@ -56,8 +56,8 @@ function Home() {
           />
         </div>
         <div className="nav-right-div">
-          <input type="search" className="nav-input" />
           <FontAwesomeIcon icon={faSearch} className="search nav-right" />
+          <input type="search" className="nav-input" />
           <NavLink to="/login" className="btn-login nav-right">
             Login
           </NavLink>
@@ -93,6 +93,9 @@ function Home() {
               <a href="user.html" className="routes-li">
                 Membership
               </a>
+            </li>
+            <li className="routes-li">
+              <a href="/vission" className="routes-li"></a>
             </li>
           </ul>
         </header>

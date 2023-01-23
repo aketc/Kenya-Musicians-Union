@@ -28,10 +28,10 @@ function Login() {
       axios.post("http://localhost:4003/login", user, config).then((res) => {
         if (res.data.user) {
           localStorage.setItem("token", res.data.user)
-          navigate("/login")
+          navigate("/")
         } else {
           alert("please check your credentials")
-          navigate("/register")
+          navigate("/login")
         }
       })
     } catch (error) {
