@@ -25,15 +25,17 @@ function Login() {
           "content-type": "application/json",
         },
       }
-      axios.post("http://localhost:4003/login", user, config).then((res) => {
-        if (res.data.user) {
-          localStorage.setItem("token", res.data.user)
-          navigate("/")
-        } else {
-          alert("please check your credentials")
-          navigate("/login")
-        }
-      })
+      axios
+        .post("http://192.168.111.67:4003/login", user, config)
+        .then((res) => {
+          if (res.data.user) {
+            localStorage.setItem("token", res.data.user)
+            navigate("/")
+          } else {
+            alert("please check your credentials")
+            navigate("/login")
+          }
+        })
     } catch (error) {
       console.log(error.message)
     }

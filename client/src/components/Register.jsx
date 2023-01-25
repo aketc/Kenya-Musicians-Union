@@ -32,7 +32,7 @@ function Register() {
       }
       if (password === repassword) {
         axios
-          .post("http://localhost:4003/user", user, config)
+          .post("http://192.168.111.67:4003/user", user, config)
           .then((res, err) => {
             if (!err) {
               navigate("/login")

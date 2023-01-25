@@ -127,7 +127,11 @@ footer{
     border-radius: 10px;
     outline: none;
     border: 0;
+    margin-right: 5px;
     
+}
+.w3-white{
+    margin-bottom: 10px;
 }
 
 @media  only screen and (max-width:700px) {
@@ -149,7 +153,22 @@ footer{
         
         }
         .w3-container{
-            padding:  1px;
+            padding:  0;
         }
+        .nav-input{
+            padding: 0px;
+            border-radius: 4px;
+            outline: none;
+            border: 0;
+            margin-right: 2px;
+            
+        }
+        .w3-input{
+            padding: 7px 0;
+        }
+        .w3-padding-large{
+            padding: 0;
+        }
+        
     
 }
