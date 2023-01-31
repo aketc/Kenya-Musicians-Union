@@ -23,7 +23,7 @@ import {
   faPinterest,
   faSnapchat,
 } from "@fortawesome/free-brands-svg-icons"
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Home() {
@@ -56,8 +56,7 @@ function Home() {
           />
         </div>
         <div className="nav-right-div">
-          <FontAwesomeIcon icon={faSearch} className="search nav-right" />
-          <input type="search" className="nav-input" />
+          {/* <FontAwesomeIcon icon={faSearch} className="search nav-right" /> */}
           <NavLink to="/login" className="btn-login nav-right">
             Login
           </NavLink>
@@ -72,8 +71,14 @@ function Home() {
         </h6>
       </div>
       <div className="routes">
+        {/* <input type="checkbox" id="check" />
+        <label htmlFor="check">
+          {" "}
+          <FontAwesomeIcon icon={faBars} id="bars" />{" "}
+          <FontAwesomeIcon id="cancel" icon={faTimes} />
+        </label> */}
         <header>
-          <ul className="routes-ul">
+          <ul className="c">
             <li className="routes-li">
               <a href="/" className="routes-li">
                 Home
@@ -178,7 +183,6 @@ function Home() {
                 Kenya and non-Kenyan musicians working in Kenya.
               </p>
               <p>
-                {" "}
                 • The Union has three branches around the country namely the
                 Nyanza branch which serves the entire western part of Kenya, the
                 Eastern branch which serves eastern Kenya, and the Coast branch
